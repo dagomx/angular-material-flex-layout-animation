@@ -1,0 +1,42 @@
+<div
+  class="navbar-container"
+  style="background-color: #cdcdcd;"
+  fxLayout="row"
+  fxLayoutAlign="end center">
+
+  <div fxFlex class="search-container"
+  [ngClass]="{'active': searchActive}">
+
+    <div
+      style="background: #ababab;"
+      fxLayout="row"
+      fxLayoutAlign="center center">
+
+        <button mat-icon-button>
+          <mat-icon>search</mat-icon>
+        </button>
+
+        <div fxFlex>
+          <input type="text" style="width: 100%;">
+        </div>
+
+        <button mat-icon-button (click)="searchActive = false">
+          <mat-icon>close</mat-icon>
+        </button>
+
+    </div>
+  </div>
+  
+  <div
+    class="search-button"
+    [ngClass]="{'inactive': searchActive}">
+
+    <button mat-icon-button
+      (click)="searchActive = true">
+
+        <mat-icon>search</mat-icon>
+
+    </button>
+  </div>
+
+	</div>

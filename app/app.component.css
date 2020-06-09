@@ -1,0 +1,23 @@
+.search-container {
+  flex-grow: 0 !important;
+  overflow: hidden;
+  flex-shrink: 1;
+  flex-basis: auto;
+  transition: all 0.25s;
+}
+
+.active {
+  flex-grow: 1 !important;
+}
+
+.search-button {
+  opacity: 1;
+  transition: all .25s;
+  width: 40px;
+  overflow: hidden;
+}
+
+.inactive {
+  opacity: 0;
+  width: 0;
+}
